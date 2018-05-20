@@ -1,0 +1,25 @@
+.tileImage {
+	width:inherit;
+	height: 100%;
+}
+
+.character {
+	width: 170px;
+	height: 90%;
+	margin: 5px;
+	display: inline-block;
+	border: 3px solid blue;
+	padding: 2px;
+}
+
+.name {
+	top: 2px;
+	line-height: 80%;
+}
+
+.stats {
+	bottom: 2px;
+	line-height: 80%;
+
+}
+
