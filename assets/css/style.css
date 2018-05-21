@@ -4,8 +4,8 @@
 }
 
 .character {
-	width: 170px;
-	height: 90%;
+	width: 160px;
+	height: 80%;
 	margin: 5px;
 	display: inline-block;
 	border: 3px solid blue;
@@ -23,3 +23,12 @@
 
 }
 
+/*.row {
+	max-height: 250px;
+	min-height:90px;
+}*/
+/*body {
+	background-image: url(../images/star-wars-background.jpg);
+	background-repeat:no-repeat;
+	color: white;
+}*/
