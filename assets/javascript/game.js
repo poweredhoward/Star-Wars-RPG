@@ -1,6 +1,7 @@
-$(document).ready( function () {
+$("#newgame").toggle("hide");
+$("#btn-attack").toggle("hide");
 
-	$("#newgame").toggle("hide");
+$(document).ready( function () {
 
 	function print(str){
 		console.log(str);
@@ -179,6 +180,7 @@ $(document).ready( function () {
 
 		//If picking hero
 		if(hero === null){
+			$("#btn-attack").toggle("show");
 			characters.forEach( function(character){
 				if (character.name == str_clicked){
 					clicked_char = character;
@@ -232,6 +234,7 @@ $(document).ready( function () {
 			if (enemiesleft === 0){
 				alert("You win!");
 			}
+
 		}
 
 		//If hero loses
@@ -239,7 +242,9 @@ $(document).ready( function () {
 			//hero.detach();
 			alert("You lose!");
 			hero = null;
-			$("#newgame").toggle("hide");
+			$("#newgame").toggle("show");
+			$("#btn-attack").toggle("hide");
+
 		}
 
 		//If no one dissapears
