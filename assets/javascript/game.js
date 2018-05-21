@@ -13,7 +13,6 @@ $(document).ready( function () {
 		health_points: 100,
 		attack_power: 5,
 		counter_attack_power: 20,
-		enemy: false,
 		tile: null,
 
 		doubleAttack: function(){
@@ -48,7 +47,6 @@ $(document).ready( function () {
 		health_points: 150,
 		attack_power: 6,
 		counter_attack_power: 15,
-		enemy: false,
 		tile: null,
 
 		doubleAttack: function(){
@@ -83,7 +81,6 @@ $(document).ready( function () {
 		health_points: 200,
 		attack_power: 4,
 		counter_attack_power: 30,
-		enemy: false,
 		tile: null,
 
 		doubleAttack: function(){
@@ -113,12 +110,23 @@ $(document).ready( function () {
 
 	}
 
+	//TODO
+	function doubleAttack(obj){
+		print(obj.health_points);
+		obj.attack_power = obj.attack_power * 2;
+		print(obj.attack_power);
+		obj.updateStats();
+	}
+
+	$("#test").click(function(){
+		doubleAttack(luke);
+	});
+
 	var maul = {
 		name: "maul",
 		health_points: 90,
 		attack_power: 8,
 		counter_attack_power: 10,
-		enemy: false,
 		tile: null,
 
 		doubleAttack: function(){
