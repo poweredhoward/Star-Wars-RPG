@@ -9,7 +9,7 @@ $(document).ready( function () {
 
 
 	var luke = {
-		name: "luke",
+		name: "Luke",
 		health_points: 100,
 		attack_power: 5,
 		counter_attack_power: 20,
@@ -43,7 +43,7 @@ $(document).ready( function () {
 	}
 
 	var obiwan = {
-		name: "obiwan",
+		name: "Obiwan",
 		health_points: 150,
 		attack_power: 6,
 		counter_attack_power: 15,
@@ -77,7 +77,7 @@ $(document).ready( function () {
 	}
 
 	var vader = {
-		name: "vader",
+		name: "Vader",
 		health_points: 200,
 		attack_power: 4,
 		counter_attack_power: 30,
@@ -110,20 +110,8 @@ $(document).ready( function () {
 
 	}
 
-	//TODO
-	function doubleAttack(obj){
-		print(obj.health_points);
-		obj.attack_power = obj.attack_power * 2;
-		print(obj.attack_power);
-		obj.updateStats();
-	}
-
-	$("#test").click(function(){
-		doubleAttack(luke);
-	});
-
 	var maul = {
-		name: "maul",
+		name: "Maul",
 		health_points: 90,
 		attack_power: 8,
 		counter_attack_power: 10,
